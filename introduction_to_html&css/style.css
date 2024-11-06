@@ -1,0 +1,106 @@
+/* element selector */
+h1{
+    color:red;
+    background-color: aqua;
+    border: 5px dashed black;
+}
+/* universal selector */
+*{
+    /* background-color: black; */
+    color: rgb(167, 154, 154);
+}
+/*  class '.',  id '#',  group ','  */
+/* descendent ' ' */
+/* direct child '>' */
+/* immediate/adjacent sibling '+' */
+/* general sibling '~' */
+/* pseudo Selectors
+        1.Pseudo class(:)
+            ->First child
+            ->Last child 
+            ->link
+            ->hover
+            ->visited
+            ->active
+            ->nth child(an +b) a:gap between element(a-1), b:offset(starting index)
+        2.Pseudo element(::)
+            ->First-line
+            ->first letter
+            ->selection
+            ->after
+            ->before*/
+/* relative units for responsive websites
+vh->view height/viewport/body
+vw->view width/viewport/body
+%->Parent
+em->parent()
+rem->root element(1 rem=16px)
+fr->body
+*/
+ol>li{
+    color: yellowgreen;
+    background-color:yellow;
+}
+h1>ol{
+    color: yellowgreen;
+    background-color:yellow;
+}
+form~table{
+    color: violet;
+    background-color: aqua;
+}
+li~li{
+    color: violet;
+    background-color: aqua;
+}
+body p{
+    color: black;
+    background-color: aqua;
+}
+a:hover{
+    color:red;
+    background-color: aliceblue;
+}
+a:visited{
+    color:purple;
+    background-color: yellowgreen; 
+}
+ol li:first-child{
+    color: violet;
+    background-color: aqua;
+}
+p::first-line{
+    background-color: black;
+    color: tomato;
+}
+p::first-letter{
+    color: chartreuse;
+    font-size: 50px;
+}
+
+p::selection{
+    background-color: black;
+    color: brown;
+}
+h1::before{
+    content: "hello";
+    color: black;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2::after{
+    content: "hello";
+    color: black;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.comtainer{
+    border: 3px solid red;
+    height:50vh;
+    width: 25vb;
+}
+.child{
+    border: 3px solid green;
+    height:50%;
+}

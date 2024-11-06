@@ -1,0 +1,163 @@
+change
+@@ -0,0 +1,161 @@
+<!--anchor tag is used for linking one webpage to another.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!-- <style></style> -->
+</head>
+<body>
+    <h1>HEADING 1</h1>
+    <h2>HEADING 2</h2>
+    <h3>HEADING 3</h3>
+    <h4>HEADING 4</h4>
+    <h5>HEADING 5</h5>
+    <h6>HEADING 6</h6>
+    <p><u>Penguins</u> are a group of aquatic flightless birds from the family Spheniscidae of the order Sphenisciformes.
+        They live almost exclusively in the Southern Hemisphere: only one species, the Galápagos penguin, is found north 
+        of the Equator. Highly adapted for life in the ocean water, penguins have countershaded dark and white plumage
+        and flippers for swimming. Most penguins feed on krill, fish, squid and other forms of sea life which they catch
+        with their bills and swallow whole while swimming. A penguin has a spiny tongue and powerful jaws to grip
+        slippery prey.
+    </p>
+    <a href="https://www.google.com/" target="_main">Google</a>
+    <br>
+    <BR>
+    <img src="https://nzbirdsonline.org.nz/sites/all/files/2X2A1697%20King%20Penguin%20bol.jpg" alt="Penguin" height="100"/>
+    <BR>
+    <b>BOLD</b>
+    <BR>
+    <i>ITALIC</i>
+    <BR>
+    <u>UNDERLINED</u>
+    <BR>
+    <big>big text</big>
+    <hr/>
+    <small>small text</small>
+    <hr/>
+    <p>
+        H<sub>2</sub>o
+        <br>
+        a<sup>2</sup>+b<sup>2</sup>+2ab
+    </p>
+    <h1>TECHNOLOGIES</h1>
+    <ol reversed="true" start="4" type="A">
+        <li>FRONTEND
+            <ul TYPE="square">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>REACT</li>
+            </ul>
+        </li>
+        <li>BACKEND
+            <ul>
+                <li>NODE</li>
+                <li>DENO</li>
+                <li>DJANGO</li>
+            </ul>
+        </li>
+    </ol>
+    <hr/>
+    <!--dl is used for creating list with description-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>USED FOR CREATING SKELETON OF WEBPAGE</dd>
+        <dt>CSS</dt>
+        <dd>USED FOR STYLING OF WEBPAGE</dd>
+        <dt>JS</dt>
+        <dd>USED FOR BUILDING LOGIC OF WEBPAGE</dd>
+    </dl>
+    <hr>
+    <h1>FORM IN HTML</h1>
+    <form>
+        <fieldset>
+            <legend>
+                Registration Form
+            </legend>
+            <!-- name attribute is used to connect frontend file with backend file  -->
+            <div>
+                <label for="first name" >First Name:</label>
+                <input type="text" id="first name" placeholder="Enter First Name" name="first name"/>
+            </div><br>
+            <div>
+                <label for="last name" >Last Name:</label>
+                <input type="text" id="last name" placeholder="Enter Last Name" name="last name"/>
+            </div><br>
+            <div>
+                <label for="email" >Email:</label>
+                <input type="email" id="email" placeholder="Enter Email Address" name="email"/>
+            </div><br>
+            <div>
+                <label for="password" >Password:</label>
+                <input type="password" id="password" placeholder="" name="password"/>
+            </div><br>
+            <div>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="gender" name="gender"/>Male<br>
+                <input type="radio" id="gender" name="gender"/>Female<br>
+                <input type="radio" id="gender" name="gender"/>Other<br>
+            </div><br>
+            <div>
+                <label for="age" >Age:</label>
+                <input type="number" id="age" placeholder="" name="age"/>
+            </div><br>
+            <div>
+                <label for="prefer" >Preferences:</label><br>
+                <input type="checkbox" id="prefer" name="prefer"/>Acrylic Painting<br>
+                <input type="checkbox" id="prefer" name="prefer"/>Oil Painting<br>
+                <input type="checkbox" id="prefer" name="prefer"/>Water Color Painting<br>
+            </div><br>
+            <div>
+                <label for="occupation" >Select Occupation:</label>
+                <select>
+                    <option>Teacher</option>
+                    <option>Student</option>
+                    <option>Admin</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="bio" >Bio:</label>
+                <textarea placeholder="Share few lines about yourself..." id="bio" name="bio"></textarea>
+            </div><br>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+        </fieldset>
+    </form>
+    <table>
+        <caption>
+            STUDENT DETAILS
+        </caption>
+        <tr>
+            <th>NAME </th>
+            <th>AGE </th>
+            <th>MARKS </th>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>20</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>DEF</td>
+            <td>20</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>GHI</td>
+            <td>20</td>
+            <td>91</td>
+        </tr>
+    </table>
+    <!-- iframe is used to display one website on another website -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=RTzqqBRSX3j9i4or" 
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</body>
+</html>
