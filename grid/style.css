@@ -1,0 +1,151 @@
+/* *{ 
+    margin: 0;
+    padding: 0;
+}
+ .container{ 
+/* .container{
+    border: 2px solid red;
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    background-color: red;
+ }
+.container1{ 
+    border: 2px solid blue;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    background-color: blue;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.container2{ 
+    height: 90vh;
+    width: 90vw;
+} */
+/* 
+.item{
+    border: 2px solid green;
+    height: 20vh;
+    height: 30vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: greenyellow;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.btn{
+    margin: 20px;
+    border-radius: 20px;
+    border-color: blue;
+    border-width: 3px;
+    justify-self: center;
+} */
+body{
+    background-color: rgb(30, 25, 25);
+}
+/* Position properties:-
+        ->static(by default)
+        ->relative(move around with respect to original position)
+        ->absolute(element moves around the nearest positional ancestor)
+        ->fixed(you can fix any element on the browser)
+        ->sticky */
+/*.main{
+    border: 2px black solid;
+.box1{
+    border: 2px solid green;
+    height: 400px;
+    width: 400px;
+}
+.contain{
+    border: 2px black solid;
+    height: 200px;
+    width: 200px;
+    width: 1000px;
+    border-radius: 50%;
+    margin: 100px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* animation-name: slide;
+    animation-duration: 3s; */
+    /* background-color: yellow;
+    transition:all
+    transition: transform,background-color;
+    transition-duration: 8s;
+    transition-delay: 1s;
+    transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);  */
+
+.item1{
+    border: 2px black solid;
+    height: 50px;
+    width: 50px;
+}
+.item2{
+    border: 2px black solid;
+    height: 50px;
+    width: 50px;
+}
+.inside1{
+    border:2px solid red;
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    background-color: red; 
+    z-index: 9;
+}
+.item3{
+    border: 2px black solid;
+    height: 50px;
+    width: 50px;
+}*/
+/* FLEXBOX 
+flex-direction=row
+justify content-main axis
+align-item=cross-axis
+ */
+.container{
+    border: 2px solid red;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* .box:hover{
+    transform: rotate(360deg);
+    background-color: aqua;
+    border-radius: 50%;
+} */
+@keyframes slide {
+    0% ,100%{
+        top:0px;
+        left:0px;
+        background-color: aqua;
+        transform: rotate(0deg);
+    }
+    25%{
+        top:0px;
+        left:400px;
+        background-color: rgb(255, 98, 0);
+    }
+    50%{
+        top:200px;
+        left:400px;
+        background-color: blue;
+    }
+    75%{
+        top:200px;
+        left:0px;
+        background-color: yellow;
+    }
+}
+.item{
+    border: 2px solid green;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+
+}
