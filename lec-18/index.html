@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYNX - Creative Business Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            color: black;
+            height: 100vh;
+        }
+        header {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .container {
+            height: calc(100vh - 60px); 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .container h2 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .container h2 span {
+            color: #e4b400; /* Gold color for "creative" */
+        }
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        .buttons a {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .yellow-btn {
+            background-color: #e4b400;
+            color: white;
+        }
+        .yellow-btn:hover {
+            background-color: #d4a200;
+        }
+        .white-btn {
+            background-color: white;
+            color: #333;
+        }
+        .white-btn:hover {
+            background-color: #ddd;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        footer a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+        h3{
+            color:#000;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #f5c300;
+            text-decoration: none;
+        }
+        .team-section {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .team-category {
+            display: inline-block;
+            margin: 20px;
+        }
+        .team-category img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .team-category h3 {
+            margin: 10px 0;
+        }
+        .team-category p {
+            color: #666;
+            font-size: 14px;
+        }
+        .meet-team-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffd700;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .form-container {
+            padding: 20px;
+            width: 50%;
+        }
+        .form-container h1 {
+            margin-bottom: 10px;
+        }
+        .form-container p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #f0ad4e;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 16px;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #ec971f;
+        }
+        .map-container {
+            width: 50%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            LYNX
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Team</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Finding <span>creative</span> approaches to help your business grow</h2>
+        <div class="buttons">
+            <a href="#" class="yellow-btn">Get in touch</a>
+            <a href="#" class="white-btn">Meet the team</a>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+    <div class="team-section">
+        <div class="team-category">
+            <img src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFya2V0ZXJzfGVufDB8fDB8fHww" alt="Marketers">
+            <h3>Marketers</h3>
+            <p>Click once to style, move and resize. Click twice to edit text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="team-category">
+            <img src="https://plus.unsplash.com/premium_photo-1683147638125-fd31a506a429?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZGVzaWduZXJzfGVufDB8fDB8fHww" alt="Designers">
+            <h3>Designers</h3>
+            <p>Click once to style, move and resize. Click twice to edit text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="team-category">
+            <img src="https://plus.unsplash.com/premium_photo-1664285639987-5e07d6935fac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29weXdyaXRlcnN8ZW58MHx8MHx8fDA%3D" alt="Copywriters">
+            <h3>Copywriters</h3>
+            <p>Click once to style, move and resize. Click twice to edit text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <a href="#" class="meet-team-btn">Meet our team</a>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <h1>Get in touch with us</h1>
+            <p>Let your visitor know how you are going to use this information.</p>
+            <form action="#" method="post">
+                <input type="text" name="first_name" placeholder="First name" required>
+                <input type="text" name="last_name" placeholder="Last name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.870647576204!2d-74.00601568459327!3d40.71277597933071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3168b8b8b1%3A0x4b8b8b8b8b8b8b8b!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1633023033030!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-info">
+                <p>Email: info@yourdomain.com</p>
+                <p>Phone: 1-800-123-4567</p>
+                <p>123 Someplace Drive, New York, New York, Zip Code, United States</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
